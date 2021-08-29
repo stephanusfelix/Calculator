@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="Stephanus Felix Suryanto">
+  <meta name="description" content="Tugas 1 Hacktiv8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="boxCalculator">
+    <div id="slotNumber"></div>
+    <table class="buttonGroup">
+      <tr>
+        <td onclick="clearVariable()">AC</td>
+        <td onclick="clearVariable()">CE</td>
+        <td onclick="inputOperation('/')">/</td>
+        <td onclick="inputOperation('*')">*</td>
+      </tr>
+      <tr>
+        <td onclick="inputNumber('7')">7</td>
+        <td onclick="inputNumber('8')">8</td>
+        <td onclick="inputNumber('9')">9</td>
+        <td onclick="inputOperation('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="inputNumber('4')">4</td>
+        <td onclick="inputNumber('5')">5</td>
+        <td onclick="inputNumber('6')">6</td>
+        <td onclick="inputOperation('+')">+</td>
+      </tr>
+      <tr>
+        <td onclick="inputNumber('1')">1</td>
+        <td onclick="inputNumber('2')">2</td>
+        <td onclick="inputNumber('3')">3</td>
+        <td style="background-color: yellow;"  rowspan="2" onclick="calculate()">=</td>
+      </tr>
+      <tr>
+        <td colspan="2" onclick="inputNumber('0')">0</td>
+        <td onclick="inputNumber('.')">.</td>
+      </tr>
+    </table>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
